@@ -7,6 +7,7 @@ function isPalindrome(word) {
   let reversedArray = wordArray.filter((char, index) => {
     return wordArray[wordArray.length - 1 - index] === char;
   });
+
   return reversedArray.length === wordArray.length;
 }
 
@@ -26,6 +27,10 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+  This solution converts the word into an array, 
+  checks if characters match their counterparts from the opposite ends, 
+  and compares the lengths of the resulting
+   matched characters array to determine if the word is a palindrome.
 */
 
 // You can run `node index.js` to view these console logs
